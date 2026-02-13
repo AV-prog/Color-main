@@ -211,29 +211,6 @@
    }
 }
 
-/* Text Animation */
-.animated-text {
-  font-size: 3rem;
-  opacity: 0;
-  transform: translateX(-50px);
-  /* Use the variable to stagger the start time */
-  animation-delay: calc(var(--i) * 0.2s);
-}
-
-.animated-text.is-visible {
-  animation-name: slideIn;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 /* Hero Section */
 .hero {
     background: #000000;

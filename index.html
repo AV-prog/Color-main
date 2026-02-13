@@ -5,15 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color By AV</title>
     <link rel="stylesheet" href="styles/style.css">
-<<<<<<< HEAD
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
-=======
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.
-    0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjxoBT+WBQEEqLprO+
-    NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
->>>>>>> a28a6e0eb96199dde9a88c73c3e872c7c694b7c1
 </head>
 <body>
     <!-- Navbar Section -->
@@ -44,17 +37,10 @@
 
     <!-- Hero Section -->
     <div class="hero" id="home">
-<<<<<<< HEAD
         <div class="hero__container animation-container">
             <h1 class="hero__heading animated-text"style="--i: 1">Choose your <span>colors</span></h1>
             <p class="hero__description animated-text"style="--i: 2">Unlimited Possibilities</p>
             <button class="main__btn animated-text"style="--i: 3"><a href="#services">Explore</a></button>
-=======
-        <div class="hero__container">
-            <h1 class="hero__heading">Choose your <span>colors</span></h1>
-            <p class="hero__description">Unlimited Possibilities</p>
-            <button class="main__btn"><a href="#services">Explore</a></button>
->>>>>>> a28a6e0eb96199dde9a88c73c3e872c7c694b7c1
         </div>
     </div>
 
@@ -64,19 +50,11 @@
             <div class="main__img--container">
                 <div class="main__img--card"><i class="fa-sharp fa-regular fa-bell"></i></div>
             </div>
-<<<<<<< HEAD
             <div class="main__content animation-container">
                 <h1 class="animated-text"style="--i: 1">What do we do?</h1>
                 <h2 class="animated-text"style="--i: 7">We help businesses scale</h2>
                 <p class="animated-text"style="--i: 7">Schedule a call to learn more about our services</p>
                 <button class="main__btn animated-text"style="--i: 7"><a href="#sign-up">Schedule Call</a></button>
-=======
-            <div class="main__content">
-                <h1>What do we do?</h1>
-                <h2>We help businesses scale</h2>
-                <p>Schedule a call to learn more about our services</p>
-                <button class="main__btn"><a href="#sign-up">Schedule Call</a></button>
->>>>>>> a28a6e0eb96199dde9a88c73c3e872c7c694b7c1
             </div>
         </div>
     </div>
@@ -112,19 +90,11 @@
     <!-- Features Section -->
     <div class="main" id="sign-up">
         <div class="main__container">
-<<<<<<< HEAD
             <div class="main__content animation-container">
                 <h1 class="animated-text"style="--i: 1">Join Our Team</h1>
                 <h2 class="animated-text"style="--i: 7">Sign Up Today</h2>
                 <p class="animated-text"style="--i: 7">See what makes us different</p>
                 <button class="main__btn animated-text"style="--i: 7"><a href="form.html">Sign Up</a></button>
-=======
-            <div class="main__content">
-                <h1>Join Our Team</h1>
-                <h2>Sign Up Today</h2>
-                <p>See what makes us different</p>
-                <button class="main__btn"><a href="form.html">Sign Up</a></button>
->>>>>>> a28a6e0eb96199dde9a88c73c3e872c7c694b7c1
             </div>
             <div class="main__img--container">
                 <div class="main__img--card" id="card-2">
@@ -194,68 +164,6 @@
             </div>
         </section>
     </footer>
-<<<<<<< HEAD
-=======
-
-    <script>
-        const menu = document.querySelector('#mobile-menu');
-        const menuLinks = document.querySelector('.navbar__menu');
-        const navLogo = document.querySelector('#navbar__logo');
-
-    //Display Mobile Menu
-        const mobileMenu = () => {
-            menu.classList.toggle('is-active');
-            menuLinks.classList.toggle('active');
-        };
-
-        menu.addEventListener('click', mobileMenu);
-
-    //show active menu when scrolling
-        const highlightMenu = () => {
-            const elem = document.querySelector('.highlight');
-            const homeMenu = document.querySelector('#home-page');
-            const aboutMenu = document.querySelector('#about-page');
-            const servicesMenu = document.querySelector('#services-page');  
-            let scrollPos = window.scrollY;
-        console.log(scrollPos);
-
-        //adds 'highlight' class to my menu items
-        if(window.innerWidth > 960 && scrollPos < 600) {
-            homeMenu.classList.add('highlight');
-            aboutMenu.classList.remove('highlight');
-            return;
-        }else if (window.innerWidth > 960 && scrollPos < 1400){
-            aboutMenu.classList.add('highlight');
-            homeMenu.classList.remove('highlight');
-            servicesMenu.classList.remove('highlight');
-            return;
-        }else if (window.innerWidth > 960 && scrollPos < 2345){
-            servicesMenu.classList.add('highlight');
-            aboutMenu.classList.remove('highlight');
-            return;
-        }
-
-        if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem){
-            elem.classList.remove('highlight');
-        }
-    };
-
-        window.addEventListener('scroll', highlightMenu);
-        window.addEventListener('click', highlightMenu);
-
-        //close mobile menu when clicking on a menu item
-        const hideMobileMenu = () => {
-        const menuBars = document.querySelector('.is-active'); 
-        if (window.innerWidth <= 768 && menuBars) {
-            menu.classList.toggle('is-active');
-            menuLinks.classList.remove('active');
-        }
-    };
-
-        menuLinks.addEventListener('click', hideMobileMenu);
-        navLogo.addEventListener('click', hideMobileMenu);
-    </script>
->>>>>>> a28a6e0eb96199dde9a88c73c3e872c7c694b7c1
 </body>
 </html>
 
